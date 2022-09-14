@@ -1,0 +1,71 @@
+/*Definições gerais do corpo da página*/
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(63, 23, 100);
+    font-size: 16px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}
+
+/*Definições de margem e centralização do Título e descrição*/
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+/*Definições gerais do corpo/espaço do formulário*/
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+/* Definições gerais dos campos "fieldsets" */
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgb(109, 5, 104);
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+/* Definições gerais dos campos "Labels" */
+label {
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+/* Definições sobre caixas de textos, botões de seleções/opções */
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea{
+background-color: #404085;
+border: 1px solid #ffffff;
+color: #ffffff;
+}
+.inline {
+    width: unset;
+    margin: 0 0.5rem 0 1rem;
+    vertical-align: middle;
+}
+#submit {
+    
+    background-color: rgb(64, 250, 89);
+    margin: 10px 2px;
+    width: 100%;
+    min-height: 2em;
+}
+
+/*Classe específica para centralizar os textos desejados dentro das Labels.*/
+.center {
+    text-align: center;
+}
