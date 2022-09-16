@@ -3,10 +3,10 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background-color:rgb(63, 23, 100);
     font-size: 16px;
+    background-color: rgba(238, 111, 8, 0.425);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: aliceblue;
+    color: rgb(255, 0, 255);
 }
 
 /*Definições de margem e centralização do Título e descrição*/
@@ -17,17 +17,23 @@ h1, p {
 
 /*Definições gerais do corpo/espaço do formulário*/
 form {
-    width: 60vw;
+    width: 70vw;
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
-  }
+    background: rgba(248, 149, 0, 0.438);
+    box-shadow: 0 8px 32px 0 rgba(238, 146, 7, 0.671);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 15px;
+        
+}
 /* Definições gerais dos campos "fieldsets" */
 fieldset {
     border: none;
-    padding: 2rem 0;
-    border-bottom: 3px solid rgb(109, 5, 104);
+    padding: 1rem 0.5rem 0rem 0.1rem;
+    border-bottom: 2px solid rgb(255, 238, 0);
 }
 fieldset:last-of-type {
     border-bottom: none;
@@ -35,7 +41,7 @@ fieldset:last-of-type {
 /* Definições gerais dos campos "Labels" */
 label {
     display: block;
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     
 }
 
@@ -43,27 +49,41 @@ label {
 input,
 textarea,
 select {
+  border-radius: 5px;
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
 }
-input, textarea{
-background-color: #404085;
-border: 1px solid #ffffff;
-color: #ffffff;
+input, textarea, #dropdown {
+background-color: rgb(253, 252, 167);
+border: 1px solid #eeb20c46;
+color: rgb(255, 0, 255);
 }
 .inline {
     width: unset;
     margin: 0 0.5rem 0 1rem;
     vertical-align: middle;
-}
-#submit {
     
-    background-color: rgb(64, 250, 89);
-    margin: 10px 2px;
-    width: 100%;
-    min-height: 2em;
 }
+
+#submit {
+    background-color: rgb(255, 145, 0);
+    margin: 10px 2px;
+    width: 30%;
+    min-height: 2em;
+    color: rgb(0, 0, 0);
+    
+}
+
+#submit:hover {
+    background-color: rgb(81, 255, 0);
+    color: rgb(255, 255, 255);
+}
+
+#dropdown {
+    background-color: rgb(253, 252, 167);
+}
+
 
 /*Classe específica para centralizar os textos desejados dentro das Labels.*/
 .center {
